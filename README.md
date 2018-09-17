@@ -1,5 +1,6 @@
-# parrot UT project ROS src
-
+# cabinet ROS packages
+parrot: handle arduino and parrot service
+logger: handle audio and video action-base logging
 ## pulling 
 ```
 git init
