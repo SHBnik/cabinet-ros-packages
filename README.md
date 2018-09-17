@@ -6,7 +6,7 @@ git init
 ``` 
 
 ```
-git remote add origin https://github.com/SHBnik/ROS_src.git
+git remote add origin https://github.com/SHBnik/cabinet-ros-packages.git
 ```
 
 ```
