@@ -3,8 +3,8 @@
 
 . no need to parrot-ros file 
 
-for pulling :
-	git init
-	git remote add origin https://github.com/SHBnik/ROS_src.git
-	git pull origin master
+for pulling :\n
+	git init\n
+	git remote add origin https://github.com/SHBnik/ROS_src.git\n
+	git pull origin master\n
 
