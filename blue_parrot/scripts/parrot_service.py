@@ -263,6 +263,10 @@ def play_voice(number):
         time.sleep(0.5)
         open_and_close_mouth()
 
+def shutup():
+    soundClient.stopWave('{}{}'.format(sounds_folder_path, sounds[number]))
+    close_mouth()
+
 
 commands = {
     'start': start,
@@ -280,7 +284,8 @@ commands = {
     'move_right': move_right,
     'open_wings': open_wings,
     'close_wings': close_wings,
-    'play_voice': play_voice
+    'play_voice': play_voice,
+    'shutup':shutup
 }
 
 
