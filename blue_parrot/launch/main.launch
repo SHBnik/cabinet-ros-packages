@@ -1,0 +1,10 @@
+<launch>
+    <node name="camera1" pkg="cv_camera" args="_device_id:=0" type="cv_camera_node" />
+    <node name="camera2" pkg="cv_camera" args="_device_id:=1" type="cv_camera_node" />
+    <node name="soundplayer" pkg="sound_play" type="soundplay_node.py"/>
+    <node name="parrot" pkg="parrot" type="parrot_service.py" />
+    <node name="arduino" pkg="parrot" type="arduino_service.py" />
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" >
+        <arg name="port" value="9090"/>
+    </include>
+</launch>
