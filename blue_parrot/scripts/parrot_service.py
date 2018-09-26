@@ -117,6 +117,11 @@ interception = True
 
 def motor1():
     send_serial_command('\x01\xff', 3)
+    
+def dance():
+    send_serial_command('\x01\xff', 3)
+    time.sleep(0.2)
+    send_serial_command('\x01\xff', 3)
 
 
 def stop_motor1():
